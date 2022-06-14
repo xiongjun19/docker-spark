@@ -3,6 +3,4 @@ numpy
 matplotlib
 pyarrow
 koalas
-keras
-elephas
 

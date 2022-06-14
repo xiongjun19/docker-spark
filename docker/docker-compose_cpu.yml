@@ -9,6 +9,9 @@ services:
     networks:
       - spark-net
     deploy:
+      resources:
+        limits:
+          cpus: "1"
       placement:
         # set node labels using docker node update --label-add key=value <NODE ID> from swarm manager
         constraints:
@@ -23,6 +26,9 @@ services:
       - CORES=2
       - MEMORY=15G
     deploy:
+      resources:
+        limits:
+          cpus: "1"
       placement:
         # set node labels using docker node update --label-add key=value <NODE ID> from swarm manager
         constraints:
